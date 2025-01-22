@@ -1,0 +1,53 @@
+starting with html
+
+TCP family 
+http/s
+Methods (Get, Post, Put, Patch, Delete)
+hyper text transfer protocol secure 
+
+structure of a website/web page is created using HTML
+
+HTML(Hyper Text Markup language) is programming language.
+we can create web page/s
+
+we need a simple text editor to write html code, to see the output of the html code we will need a web browser
+
+step 1: create .html page 
+step 2: open the page using any web browser (our OS sees the .html file as web file by default it will be opened in any web browser)
+
+step 3: syntax for writing a html page
+
+html creates page/s using elements
+text elements (heading, span, paragraphs),
+text style elements(bold, super-script),
+media element,
+tabular element(lists and tables),
+input element, etc.
+
+to create a html element we need a html tag
+
+there are 3 types of html tags 
+container tag
+<tagname>some content</tagname>
+opening tag - closing tag
+
+self-closing tag
+<tagname attr="" />
+
+empty tag
+<tagname />
+
+comments - are the code which won't get executed
+<!-- content -->
+
+html syntax:
+<html>
+<!-- html tag is also called as root element or tag -->
+	<head>
+	<!-- logics, rules, relations, meta-data -->
+	</head>
+	
+	<body>
+	<!-- content to displayed  -->
+	</body>
+</html>
