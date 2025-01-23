@@ -1,0 +1,3 @@
+localhost can also be writen as 127.0.0.1
+all html elements are of 2 types (display property)
+type inline element - these elements can be in same row (span) | block element - these cannot be in the same row (headings and paragraph)
