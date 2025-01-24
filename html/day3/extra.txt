@@ -1,0 +1,5 @@
+to write a relative path
+we need a escape squence
+it is an order to read the files and folder by our system
+/ - home/root , ./ - same dir(folder), ./folder_name - forward,
+../ - backward (one folder back)
