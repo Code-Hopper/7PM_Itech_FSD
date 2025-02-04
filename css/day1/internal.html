@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- internal css has to be writen in the same html page using a style tag in the head of html page -->
+
+    <style>
+        /* selector{
+            property1 : value1,
+            property2 : value2,
+            property3 : value3,
+            property4 : value4
+        } */
+
+        /* selectors */
+        /* universal : * , by tag name : tagname  , by class name : .classname, by id : #id */
+
+        #i1{
+           color: violet; 
+        }
+
+        *{
+            color: green;
+        }
+
+        h1{
+           color: blue; 
+        }
+
+        .first{
+            color: red;
+        }
+
+        .second{
+            background-color: yellow;
+        }
+
+
+        /* * > tagname > .class > #id > inline-css */
+       
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- each html element can have a class attr -->
+
+    <!-- each html element can have a id attr -->
+
+    <!-- id has to be unique -->
+
+    <!-- a class may content multiple elements -->
+    <!-- an element may content multiple classes -->
+
+    <!-- first second third -->
+
+    <h1 id="i1" class="first second third" style="color: aqua;">
+        this is some heading 1
+    </h1>
+
+    <h1 class="second">
+        this is some heading 1
+    </h1>
+
+    <h1 class="second">
+        this is some heading 1
+    </h1>
+
+    <h1 class="second">
+        this is some heading 1
+    </h1>
+
+    <ul class="">
+        <li class="first">item 1</li>
+        <li class="third">item 2</li>
+        <li class="second">item 3</li>
+        <li class="third">item 4</li>
+    </ul>
+
+    <div class="fourth">
+
+    </div>
+
+    <a class="first" href="">click here</a>
+
+    <form action="">
+
+        <input type="text" class="first" placeholder="enter something">
+
+        <button class="third">Submit</button>
+    </form>
+
+</body>
+
+</html>
