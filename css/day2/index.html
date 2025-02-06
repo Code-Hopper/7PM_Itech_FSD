@@ -1,11 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        #parent {
+            background-color: red;
+            width: 50%;
+            height: 500px;
+        }
+
+        #child {
+            background-color: yellow;
+            width: 50%;
+            height: 50%;
+            /* 250px */
+        }
+
+        #grandchild {
+            background-color: green;
+            width: 50%;
+            height: 50%;
+            /* 125px */
+        }
+
+        #greatgrandchild {
+            background-color: black;
+            width: 50%;
+            height: 50%;
+        }
+
+        #greatgreatgrandchild {
+            background-color: blue;
+            width: 50%;
+            height: 50vh;
+        }
+
+        /* % unit set value with respect to it's parent element */
+
+        /* vw,vh set value with respect to screen not parent */
+
+        /* for all display what we see without scrolling (vertically and horizontally) is 100vw x 100vh */
+
+    </style>
 </head>
+
 <body>
-    <h1>new content</h1>
+    <div id="parent">
+
+        <div id="child">
+
+            <div id="grandchild">
+
+                <div id="greatgrandchild">
+
+                    <div id="greatgreatgrandchild">
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
 </body>
+
 </html>
