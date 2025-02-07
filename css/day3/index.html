@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REM & EM</title>
+
+    <style>
+
+        html{
+            font-size: 10px;
+            /* 1rem = 10px */
+        }
+
+        :root{
+
+        }
+
+        .parent {
+            width: 500px;
+            height: 500px;
+            background-color: black;
+            color: white;
+
+            font-size: 25px;
+
+        }
+
+        .child {
+            width: 2em;
+            height: 5em;
+            background-color: red;
+        }
+
+        .p1child1{
+            width: 2em;
+            height: 5rem;
+            background-color: blue;
+        }
+
+        .parent2 {
+            width: 500px;
+            height: 500px;
+            background-color: red;
+            color: white;
+
+            font-size: 100px;
+
+        }
+
+        .child2 {
+            width: 2em;
+            height: 0.25em;
+            background-color: white;
+        }
+    </style>
+
+    <!--  -->
+
+</head>
+
+<body>
+
+    <div class="parent">
+
+        <span>this is some content</span>
+
+        <div class="child"></div>
+        <div class="p1child1"></div>
+
+    </div>
+
+    <div class="parent2">
+
+        <span>this is some content</span>
+
+        <div class="child2"></div>
+        <div class="p2child2"></div>
+
+    </div>
+
+</body>
+
+</html>
