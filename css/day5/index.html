@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .d1 {
+            width: 500px;
+            height: 200px;
+            background-color: red;
+            /* padding: 10px; */
+            /* using this property we can apply padding(external cover) same to the all sides ( T R B L ) */
+            /* padding: 10px 50px 20px 5px; */
+            /* using this property we can apply padding directionally ( Top Right Bottom Left ) */
+            /* padding: 10px 50px; */
+            /* using this property we can apply padding for aternet direction i.e. (TopBottom LeftRight) */
+            /* padding-left: ;
+            padding-right: ;
+            padding-top: ;
+            padding-bottom: ; */
+            /* this is padding directional property requries only a single value */
+            padding: 2rem;
+
+            /* border */
+            /* border: 25px solid black; */
+            /* border: size(units) type(solid, dotted, dashed, double dashed) color(hex, rgb, solid color); */
+            /*
+            border-width: 25px; for size
+            border-style: solid; for type
+            border-color: rgb(179, 199, 2); for color
+            */
+            /* border-left: 5px solid blue;
+            border-right: 15px solid black;
+            border-bottom: 25px solid green;
+            border-top: 10px solid purple; */
+            /* using above properties we can apply border directionally */
+            /* outline: 20px solid rgba(0,0,0,0.5); */
+            border: 25px solid rgba(0, 0, 0, 0.5);
+
+            /* margin */
+
+            /* margin: 50px; */
+            /* using this property we can apply margin(external spacing) same to the all sides ( T R B L ) */
+            /* margin: 10px 50px 20px 5px; */
+            /* using this property we can apply margin directionally ( Top Right Bottom Left ) */
+            /* margin: 10px 50px; */
+            /* using this property we can apply margin for aternet direction i.e. (TopBottom LeftRight) */
+
+            /* maring-left: ;
+            maring-right: ;
+            maring-top: ;
+            maring-bottom: ; */
+            /* this is maring directional property requries only a single value */
+            margin: 10px;
+
+            /* border-radius */
+            /* border-radius: 100%; */
+
+            /* box-sizing: content-box; */
+            box-sizing: border-box;
+            /* this is sum the total layer value to the actuly dimensions provide externally */
+
+
+
+        }
+
+        .d2 {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            padding: 1rem;
+            box-sizing: border-box;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="d1">
+
+    </div>
+    <div class="d2">
+        <h1>this some content</h1>
+    </div>
+
+    <button id="btn">click</button>
+
+</body>
+
+</html>
