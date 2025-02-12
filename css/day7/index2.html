@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .d1 {
+            width: 500px;
+            height: 500px;
+
+            /* background: linear-gradient(45deg, red 5%, blue 10%,green 0%); */
+
+            /* linear-gradient(), radial-gradient(),conic-gradient() */
+
+            /* linear-gradient(direction [deg],color composition, color composition) */
+
+            /* background-image overlay using background property and linear-gradient() */
+
+            background: linear-gradient(0deg, rgba(167, 0, 0, 0.9), rgba(0,0,0,0.5)) , url("./image.png");
+
+            /* we have to use this gradient function in background property */
+        }
+
+        .d2 {
+            width: 500px;
+            height: 500px;
+
+            /* background: linear-gradient(45deg, red 5%, blue 10%,green 0%); */
+
+            /* linear-gradient(), radial-gradient(),conic-gradient() */
+
+            /* linear-gradient(direction [deg],color composition, color composition) */
+
+            background: url("./image.png");
+
+            /* we have to use this gradient function in background property */
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="d1"></div>
+
+    <div class="d2"></div>
+
+</body>
+
+</html>
