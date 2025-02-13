@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables</title>
+
+    <!-- css -->
+
+    <style>
+        /* variables in css */
+
+        :root {
+
+            /* syntax to create a variable */
+
+            /* --name : value */
+            --color1: #FFB200;
+            --color2: #EB5B00;
+            --color3: #D91656;
+            --color4: #640D5F;
+            --size1 : 500px;
+            --gradient1 : linear-gradient(45deg,red,blue);
+            
+        }
+
+        /* we create variables in root element so that the variable can be accesed by all html elements */
+        /* to access the variable we can use var() function of css */
+
+        #element1 {
+            margin: 1rem;
+            width: 500px;
+            height: 500px;
+            background-color: var(--color1);
+        }
+
+        #element2 {
+            margin: 1rem;
+            width: 500px;
+            height: 500px;
+            background-color: var(--color3);
+        }
+
+        #element3 {
+            margin: 1rem;
+            width: 500px;
+            height: 500px;
+            background-color: var(--color1);
+        }
+
+        #element4 {
+            margin: 1rem;
+            width: 500px;
+            height: 500px;
+            background-color: var(--color4);
+        }
+
+        #element5 {
+            margin: 1rem;
+            width: var(--size1);
+            height: var(--size1);
+            background-color: var(--color2);
+            background: var(--gradient1);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="element1">
+
+    </div>
+    <div id="element2">
+
+    </div>
+    <div id="element3">
+
+    </div>
+    <div id="element4">
+
+    </div>
+    <div id="element5">
+
+    </div>
+
+</body>
+
+</html>
