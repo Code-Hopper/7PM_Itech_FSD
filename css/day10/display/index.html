@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <!-- display -->
+    <!-- none, inline, block, inline-block, flex, grid -->
+    <!-- flex layout | grid layout -->
+
+    <!-- display : none will remove the element from the screen whereas visibility : hidden will hide the element -->
+
+    <!-- display : inline | it will allow element to be in same row | will not accept any external height and width  -->
+
+    <!-- display : block | it will not allow elements to be in same row | will accept any external height and width  -->
+
+    <!-- dislay : inline-block | it will allow element to be in same row | will accept any external height and width -->
+
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        #d1 {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            display: inline-block;
+        }
+
+        #d2 {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            display: inline-block;
+        }
+
+        #cd3{
+            height:100px;
+            background-color: black
+        }
+
+        /* default width for a block element is 100% */
+
+    </style>
+
+</head>
+
+<body>
+    <div id="d1">
+        this is d1
+    </div>
+    <div id="d2">
+        this is d2
+        <div id="cd3"></div>
+    </div>
+</body>
+
+</html>
