@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #parent {
+            margin: auto;
+            /* width: calc(800px + 3rem); */
+            width: 800px;
+            height: 800px;
+            border: 5px solid black;
+
+            /* flex is single dimensional layout | we can manipulate it either row wise or column at a time */
+
+            display: flex;
+
+            /* flex default direction is row */
+
+            flex-direction: column;
+            /* row(default) column row-reverse column-reverse */
+
+            /* if we want that our child element should not adjust their height and width we can use flex-wrap property */
+
+            flex-wrap: nowrap;
+            /* wrap nowrap(default) wrap-reverse*/
+
+            gap: 1rem;
+            /* we can create gutter in between the elements */
+
+            /* when direction is row */
+            /* for vertical alignment align-items: | for horizontal alignment justify-content: */
+
+            /* when direction is column */
+            /* for vertical alignment  justify-content: | for horizontal alignment align-items: */
+
+            justify-content: space-around;
+
+            /* start end center */
+            /* space-between , space-evenly , spaced-around*/
+
+            align-items: center;
+            /* start end center */
+        }
+
+        .child {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            color: white;
+            font-size: 4rem;
+        }
+
+        .child1 {
+            background-color: red;
+            /* flex order starts with 0 ( also it the default value for all child elements in flex layout) */
+            order: 1;
+            flex-shrink: 0;
+            flex-grow: 1;
+            /* 0 (for not shrinking), 1 (default) */
+            /* it will make sure that the element wont shirnk when flex-wrap is set to nowrap */
+        }
+
+        .child2 {
+            background-color: blue;
+            order: 4;
+            flex-grow: 1;
+            /* 0 (for not growing), 1 (for growing) */
+            /* it will make the element occupy all the empty space in row/column */
+        }
+
+        .child3 {
+            background-color: green;
+            order: 5;
+        }
+
+        .child4 {
+            background-color: yellow;
+            order: 2;
+        }
+
+        .child5 {
+            background-color: purple;
+        }
+
+        .child6 {
+            background-color: brown;
+            order: 3;
+        }
+
+        /* grow / shirnk */
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div class="child child1">1</div>
+        <div class="child child2">2</div>
+        <!-- <div class="child child3">3</div>
+        <div class="child child4">4</div>
+        <div class="child child5">5</div>
+        <div class="child child6">6</div> -->
+    </div>
+</body>
+
+</html>
