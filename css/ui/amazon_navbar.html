@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+
+    <!-- fontawesome cdn link | for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        .navbar {
+            background-color: rgb(19, 25, 33);
+            display: flex;
+            height: 40px;
+            align-items: center;
+            gap: 1rem;
+            color: white;
+            padding: 1rem 2rem;
+        }
+
+        .navbar-logo-img {
+            width: 175px;
+        }
+
+
+        .drop-pin {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .drop-pin-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .drop-pin-text-1 {
+            font-size: 0.75rem;
+        }
+
+        .drop-pin-text-2 {
+            font-weight: bold;
+        }
+
+        .search-bar {
+            display: flex;
+            gap: 0;
+            flex-grow: 1;
+        }
+
+        .search-bar-input {
+            border: 0;
+            flex-grow: 1;
+        }
+
+        .search-bar-button-1 {
+            border: 0;
+            padding: 1rem;
+            border-radius: 7px 0 0 7px;
+            font-size: 1.15rem;
+            font-weight: bold;
+        }
+
+        .search-bar-button-2 {
+            border: 0;
+            padding: 1rem;
+            background-color: rgb(254, 189, 105);
+            border-radius: 0 7px 7px 0;
+            font-size: 1.15rem;
+        }
+
+        .navbar-user-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .flag-lang {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .flag-lang-img {
+            width: 35px;
+        }
+
+        .hello-user {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hello-user-text-1 {
+            font-size: 0.75rem;
+        }
+
+        .hello-user-text-2 {
+            font-weight: bold;
+        }
+
+        .return-orders{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .return-orders-text-1 {
+            font-size: 0.75rem;
+        }
+
+        .return-orders-text-2 {
+            font-weight: bold;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="navbar">
+
+        <!-- logo -->
+        <div class="navbar-logo">
+
+            <img class="navbar-logo-img" src="./amazon-logo.png" alt="">
+
+        </div>
+        <!-- drop pin -->
+        <div class="drop-pin">
+            <div class="drop-pin-location">
+                <span class="fa-solid fa-location-dot"></span>
+            </div>
+            <div class="drop-pin-text">
+                <span class="drop-pin-text-1">
+                    Deliver to Amey
+                </span>
+                <span class="drop-pin-text-2">
+                    Nagpur 440024
+                </span>
+            </div>
+        </div>
+        <!-- search bar -->
+        <div class="search-bar">
+            <button class="search-bar-button-1">All</button>
+            <input class="search-bar-input" type="text" placeholder="search here ...">
+            <button class="search-bar-button-2">
+                <span class="fa-solid fa-search"></span>
+            </button>
+        </div>
+        <!-- user actions -->
+        <div class="navbar-user-actions">
+            <!-- flag and lang  -->
+            <div class="flag-lang">
+                <img class="flag-lang-img" src="./india-flag.png" alt="">
+                <span class="flag-lang-text"> Eng</span>
+            </div>
+            <!-- hello user -->
+            <div class="hello-user">
+                <span class="hello-user-text-1">Hello, Amey !</span>
+                <span class="hello-user-text-2">
+                    Account & Lists
+                </span>
+            </div>
+            <!-- return and order -->
+            <div class="return-orders">
+                <span class="return-orders-text-1">Returns</span>
+                <span class="return-orders-text-2">
+                    & Orders
+                </span>
+            </div>
+            <!-- cart -->
+            <div class="user-action-shopping-cart">
+                <span class="fa-solid fa-shopping-cart fa-2x"> </span>
+                <span style="font-weight: bold;">Cart</span>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

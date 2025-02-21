@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new ui</title>
+
+    <!-- fontawesome cdn link | for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        .main {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .logo {
+            font-size: 5rem;
+            font-weight: 500;
+        }
+
+        .logo-text {
+            display: flex;
+            gap: .25rem;
+        }
+
+        .search-bar{
+            width: 35%;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            /* border: 1px solid red; */
+            border-radius: 35px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .search-bar-input{
+            width: 100%;
+            border: 0;
+            font-size: 1.5rem;
+        }
+
+        .search-bar-input:focus{
+            border: 0;
+            outline: none;
+        }
+
+        .search-bar-input-container{
+            flex-grow: 1;
+        }
+
+
+        .search-bar-extra{
+            display: flex;
+            gap: 1rem;
+        }
+
+        .recent-item{
+            width: 50px;
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0.15);
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.45rem;
+        }
+
+        .recent-item-container{
+           width: 420px; 
+           display: flex;
+           flex-wrap: wrap;
+           gap: 2rem;
+           justify-content: center;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="main">
+        <!-- logo -->
+        <div class="logo">
+            <span class="logo-text">
+                <span style="color: #4382E1;">G</span>
+                <span style="color: #DA3833;">o</span>
+                <span style="color: #F3BA00;">o</span>
+                <span style="color: #4380F4;">g</span>
+                <span style="color: #2EA44F;">l</span>
+                <span style="color: #DE4136;">e</span>
+            </span>
+        </div>
+        <!-- search bar -->
+        <div class="search-bar">
+            <div>
+                <span style="color: rgba(0, 0, 0, 0.5);" class="fa-solid fa-search"> </span>
+            </div>
+            <div class="search-bar-input-container">
+                <input class="search-bar-input" type="text" placeholder="search here ...">
+            </div>
+            <div class="search-bar-extra" style="color: rgba(0, 0, 0, 0.5);">
+                <span class="fa-solid fa-microphone"></span>
+                <span class="fa-solid fa-camera"></span>
+            </div>
+        </div>
+        <!-- recent items -->
+        <div class="recent-item-container">
+            <div class="recent-item">
+                <span class="fa-brands fa-facebook"></span>
+            </div>
+            <div class="recent-item">
+                <span class="fa-brands fa-instagram"></span>
+            </div>
+            <div class="recent-item">
+                <span class="fa-brands fa-youtube"></span>
+            </div>
+            <div class="recent-item">
+                <span class="fa-brands fa-linkedin"></span>
+            </div>
+            <div class="recent-item">
+                <span class="fa-brands fa-discord"></span>
+            </div>
+            <div class="recent-item">
+                <span class="fa-brands fa-slack"></span>
+            </div>
+            <div class="recent-item">
+                <span class="fa-brands fa-apple"></span>
+            </div>
+            <div class="recent-item">
+                <span class="fa-brands fa-github"></span>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
