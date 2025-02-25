@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        .a + .b {
+            width: 200px;
+            height: 200px;
+            background-color: red !important;
+            color: white;
+        }
+
+
+        .a ~ .b{
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            color: white;
+        }
+
+      
+    </style>
+
+</head>
+
+<body> 
+    
+    <div>
+        <div class="a">
+            this is a 1
+        </div>
+    </div>
+
+    <div>
+        <div class="b">
+            this is b 1
+        </div>
+    </div>
+
+    <div>
+        <div class="a">this is a 2</div>
+        <div class="b">this is b 2</div>
+        <span>this is some span</span>
+        <span>this is some span</span>
+        <span>this is some span</span>
+        <span>this is some span</span>
+        <span>this is some span</span>
+        <div class="b">this is b 2</div>
+    </div>
+
+</body>
+
+</html>

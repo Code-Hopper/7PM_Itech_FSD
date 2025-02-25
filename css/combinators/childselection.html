@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- any child / direct child  -->
+
+    <style>
+        h1 {
+            background-color: red;
+        }
+
+        div h1 {
+            background-color: blue;
+        }
+
+        /* .d1 h1{
+            background-color: yellow;
+        }
+         */
+
+        .d1>h1 {
+            background-color: purple;
+        }
+
+        .a .b .c .d h1 {
+            background-color: pink;
+        }
+
+        .a > .b > .c > .d > h1 {
+            background-color: aqua;
+        }
+
+        /* if we want to select a child element with refrence of the parent element we can write selectors with a space " .parent selector (any child) " | " .parent > selector (direct child) "  */
+
+    </style>
+
+</head>
+
+<body>
+    <div class="d1">
+        <div>
+            <div>
+                <h1 class="">this is some heading content !</h1>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <h1>this is some heading content !</h1>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <h1>this is some heading content !</h1>
+        </div>
+    </div>
+
+    <h1>this is some heading content !</h1>
+
+
+    <h1>this is some heading content !</h1>
+
+    <h1>this is some heading content !</h1>
+
+    <div class="d1">
+        <h1>this is direct child</h1>
+        <div></div>
+        <div></div>
+        <span></span>
+    </div>
+
+    <div class="a">
+        <div class="b">
+            <div class="c">
+                <div class="d">
+                    <h1>this is new heading</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="a">
+        <div>
+            <div class="b">
+                <div class="c">
+                    <div class="d">
+                        <h1>this is new heading</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <h1>this is section heading</h1>
+    </section>
+
+
+</body>
+
+</html>
