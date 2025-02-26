@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        :root {
+            --gap: 1rem;
+        }
+
+        body {
+            height: 100vh;
+        }
+
+        .keypad {
+            width: 450px;
+            height: 700px;
+            background-color: rgba(0, 0, 0, 0.5);
+            margin: 10rem auto;
+            border-radius: 14px;
+            display: flex;
+            flex-direction: column;
+            gap: var(--gap);
+            padding: var(--gap);
+        }
+
+        .key {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(rgba(255, 255, 255, 0.7), rgb(255, 255, 255), rgba(238, 238, 238, 0.7));
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 14px;
+        }
+
+        .key:hover {
+            /* background: linear-gradient(rgba(255, 255, 255,1) , rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 1)); */
+            background-color: green;
+        }
+
+        .keypad>.group-1 {
+            display: flex;
+            gap: var(--gap);
+            flex-wrap: wrap;
+        }
+
+        .keypad>.group-2 {
+            display: flex;
+            flex-direction: row;
+            gap: var(--gap);
+
+        }
+
+        .group-2>.group-2-sub-1 {
+            flex-grow: 1;
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--gap);
+        }
+
+        .group-2>.group-2-sub-2>.key {
+            height: 100%;
+        }
+
+        .keypad>.group-3 {
+            display: flex;
+            gap: var(--gap);
+        }
+
+        .keypad>.group-3>* {
+            flex-grow: 1;
+        }
+
+        .group-3-sub-1 {
+            display: flex;
+            flex-direction: column;
+            gap: var(--gap);
+        }
+
+        .group-3-sub-1>.group-3-sub-1-part-1 {
+            display: flex;
+            gap: var(--gap);
+        }
+
+        .key18 {
+            width: 100%;
+        }
+
+        .group-3-sub-2 {
+            display: flex;
+            gap: var(--gap);
+        }
+
+        .group-3-sub-2-part-1 {
+            display: flex;
+            flex-direction: column;
+            gap: var(--gap);
+        }
+
+        .key23 {
+            height: 100%;
+        }
+
+        .key4:hover {
+            background: red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="keypad">
+        <div class="group-1">
+            <div class="key key1"><i class="fa-solid fa-calculator"></i></div>
+            <div class="key key2">C</div>
+            <div class="key key3">+/-</div>
+            <div class="key key4"><i class="fa-solid fa-power-off"></i></div>
+            <div class="key key5">Num Lock</div>
+            <div class="key key6">/</div>
+            <div class="key key7">*</div>
+            <div class="key key8">-</div>
+        </div>
+        <div class="group-2">
+            <div class="group-2-sub-1">
+                <div class="key key9">7</div>
+                <div class="key key10">8</div>
+                <div class="key key11">9</div>
+                <div class="key key12">4</div>
+                <div class="key key13">5</div>
+                <div class="key key14">6</div>
+            </div>
+            <div class="group-2-sub-2">
+                <div class="key key15">+</div>
+            </div>
+        </div>
+        <div class="group-3">
+            <div class="group-3-sub-1">
+                <div class="group-3-sub-1-part-1">
+                    <div class="key key16">1</div>
+                    <div class="key key17">2</div>
+                </div>
+                <div class="group-3-sub-1-part-2">
+                    <div class="key key18">0</div>
+                </div>
+            </div>
+            <div class="group-3-sub-2">
+                <div class="group-3-sub-2-part-1">
+                    <div class="key key23">3</div>
+                    <div class="key key23">.</div>
+                </div>
+                <div class="group-3-sub-2-part-2">
+                    <div class="key key23">Enter</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
