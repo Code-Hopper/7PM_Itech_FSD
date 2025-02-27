@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+    <style>
+
+        #d1 {
+            width: 500px;
+            height: 500px;
+            background: url("https://picsum.photos/id/237/200/300");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #d1:hover {
+            border: 25px solid black;
+            background: url("https://picsum.photos/id/238/200/300");
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #i1 {
+            background-color: red;
+            color: white;
+        }
+
+        #i1:hover {
+            background-color: black;
+        }
+
+        #i1:focus {
+            background-color: green;
+        }
+
+        #i1::placeholder {
+            color: black;
+        }
+
+        /* change flex-direction on hover */
+
+        /* :link , :active , :hover, :visited, :focus  */
+
+        /* ::placeholder */
+
+        /* :nth-child(n) :nth-last-child(n) | n can be even and odd also */
+
+        /*  */
+
+        li:nth-child(6) {
+            background-color: red;
+        }
+
+        .text:nth-child(2){
+            color: green;
+            background-color: black;
+        }
+
+        .text:nth-last-child(1){
+            background-color: red;
+        }
+
+        tr:hover:nth-child(2n) {
+            background-color: black;
+            color: white;
+        }
+
+        tr:nth-child(2n + 1){
+            background-color: green ;
+        }
+
+    </style>
+    
+</head>
+
+<body>
+    <!-- <div id="d1">
+
+    </div>
+    <h1>this is heading</h1> -->
+
+    <table border="1">
+        <tr>
+            <td>data 1</td>
+            <td>data 2</td>
+            <td>data 3</td>
+            <td>data 4</td>
+        </tr>
+        <tr>
+            <td>data 1</td>
+            <td>data 2</td>
+            <td>data 3</td>
+            <td>data 4</td>
+
+        </tr>
+        <tr>
+            <td>data 1</td>
+            <td>data 2</td>
+            <td>data 3</td>
+            <td>data 4</td>
+        </tr>
+        <tr>
+            <td>data 1</td>
+            <td>data 2</td>
+            <td>data 3</td>
+            <td>data 4</td>
+        </tr>
+    </table>
+
+    <div>
+        <span class="text">text 1</span>
+        <span class="text">text 2</span>
+        <span class="text">text 3</span>
+        <span class="text">text 4</span>
+    </div>
+    <div>
+        <span class="text">text 1</span>
+        <span class="text">text 2</span>
+        <span class="text">text 3</span>
+        <span class="text">text 4</span>
+    </div>
+    <div>
+        <span class="text">text 1</span>
+        <span class="text">text 2</span>
+        <span class="text">text 3</span>
+        <span class="text">text 4</span>
+    </div>
+    <div>
+        <span class="text">text 1</span>
+        <span class="text">text 2</span>
+        <span class="text">text 3</span>
+        <span class="text">text 4</span>
+    </div>
+
+    <input id="i1" placeholder="enter something" type="text">
+
+    <ul>
+        <li class="item1">item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+        <li>item5</li>
+        <li>item6</li>
+    </ul>
+
+    <div>
+
+        <li>
+            item something
+        </li>
+
+        <li>
+            item something
+        </li>
+
+        <li>
+            item something
+        </li>
+
+        <li>
+            item something
+        </li>
+        <li>
+            item something
+        </li>
+
+        <li>
+            item something
+        </li>
+
+        <li>
+            item something
+        </li>
+
+        <li>
+            item something
+        </li>
+    </div>
+
+    <ul>
+        <li class="item1">item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+        <li>item5</li>
+    </ul>
+
+
+    <ul>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+        <li>item5</li>
+    </ul>
+
+
+    <ul>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+        <li>item5</li>
+    </ul>
+
+</body>
+
+</html>
