@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        input {
+            background-color: red;
+            color: white;
+        }
+
+        input::placeholder {
+            color: white;
+            font-weight: bold;
+            font-size: 2rem;
+        }
+
+
+        h1::after {
+            content: "after content";
+            font-size: 3rem;
+            color: red;
+        }
+
+        h1::before {
+            content: "before content";
+            color: green;
+        }
+
+        #d1 {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: relative;
+        }
+
+
+        #d1:hover{
+            background-color: black;
+        }
+
+        #d1:not(:hover){
+            background-color: purple;
+        }
+
+        #d1.special{
+            border: 24px solid orange;
+        }
+
+        #d1:not(.special){
+            border: 24px solid indigo;
+        }
+
+        #d1::after {
+            content: "";
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: absolute;
+            left: 100%;
+            /* right: 0; */
+            z-index: 1;
+        }
+
+        #d1::before {
+            content: "";
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            position: absolute;
+            left: 100%;
+            bottom: 0;
+            /* right: 0; */
+            z-index: 2;
+        }
+
+        #d1::selection {
+            background-color: green;
+        }
+
+        p::first-letter{
+            font-family: sans-serif;
+            font-size: 2rem;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        p::first-line{
+            background-color: red;
+            color: white;
+        }
+
+        /* li:first-child{
+            color: red;
+        }
+
+        li:last-child{
+            color: blue;
+        } */
+        
+
+        .list{
+            /* background-color: red; */
+            list-style: none;
+            padding: 0;
+        }
+
+        /* .list > li::before{
+            content: "✅";
+        } */
+
+
+        .list > li::before{
+            content: "\f118";
+            font-family: 'Font Awesome\ 5 Free';
+            color: red;
+            padding-right: 0.5rem;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <ul class="list">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+        <li>item 6</li>
+    </ul>
+
+
+    <input type="text" placeholder="enter something">
+
+    <h1>
+        this is some heading
+    </h1>
+
+    <div id="d1" class="">
+        kasdaskjdhakjsdhkj
+    </div>
+
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, facilis commodi! Aperiam cumque minus fugit, alias praesentium eligendi, laborum fuga nemo esse veritatis ut cupiditate rem reprehenderit aspernatur fugiat asperiores maiores perspiciatis perferendis amet suscipit, quos laudantium eaque! Labore repellat eius illo sapiente distinctio beatae voluptates reiciendis! Architecto beatae minima veniam explicabo dolore illum tenetur assumenda! Aperiam harum accusamus minus velit libero ipsa quibusdam quidem modi ullam ad. Tempore voluptatum impedit accusamus laudantium exercitationem obcaecati inventore ad vel? Quae hic ipsum placeat alias, architecto rem velit culpa explicabo soluta quam quia animi magni minima. Laudantium exercitationem odit a eum explicabo.
+    </p>
+
+    <ul>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+    </ul>
+
+    <ul>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </ul>
+
+</body>
+
+</html>
