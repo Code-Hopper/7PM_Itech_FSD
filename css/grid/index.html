@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <!-- display: grid; -->
+    <!-- muti(2D) dimensional layout (Row x Column) -->
+
+    <style>
+        body>.parent {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .parent {
+            width: 800px;
+            height: 800px;
+            border: 10px solid black;
+            display: grid;
+            grid-template-rows: 3fr repeat(2, 1fr);
+            grid-template-columns: 3fr repeat(2, 1fr) 2fr;
+            gap: 1rem;
+        }
+
+        .child {
+            /* width: 100%;
+            height: 100%; */
+            background-color: red;
+            border: 1px solid blue;
+            box-sizing: border-box;
+            color: white;
+            font-size: 2rem;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="parent">
+        <div class="child">R1C1</div>
+        <div class="child">R1C2</div>
+        <div class="child">R1C3</div>
+        <div class="child">R2C1</div>
+        <div class="child">R2C2</div>
+        <div class="child">R2C3</div>
+        <div class="child">R3C1</div>
+        <div class="child">R3C2</div>
+        <div class="child">R3C3</div>
+        <!-- <div class="child">10</div>
+        <div class="child">11</div>
+        <div class="child">12</div>
+        <div class="child">13</div> -->
+    </div>
+
+</body>
+
+</html>
