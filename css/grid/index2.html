@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+            font-family: sans-serif;
+        }
+        .parent{
+            border: 2px solid red;
+            width: 800px;
+            height: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2rem;
+
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(4,1fr);
+            gap: 1rem;
+        }
+        .child{
+            background-color: black;
+            color: white;
+            font-size: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .child1{
+            /* grid-column-start: 2;
+            grid-column-end: 4; */
+            /*  */
+            /* grid-row-start: 2;
+            grid-row-end: 4; */
+            /* grid-column: starting line / ending line; */
+            /* grid-row: starting line / ending line; */
+            grid-column: 2 / span 2;
+            grid-row: 2 / span 2;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="parent">
+        <div class="child child1">1</div>
+        <div class="child child2">2</div>
+        <div class="child child3">3</div>
+        <div class="child child4">4</div>
+        <div class="child child5">5</div>
+        <div class="child child6">6</div>
+        <div class="child child7">7</div>
+        <div class="child child8">8</div>
+        <div class="child child9">9</div>
+        <div class="child child10">10</div>
+        <div class="child child11">11</div>
+        <div class="child child12">12</div>
+        <div class="child child13">13</div>
+    </div>
+
+</body>
+</html>

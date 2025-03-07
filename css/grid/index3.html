@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            border: 3px solid red;
+            /* width: 800px;
+            height: 800px; */
+            margin: 2rem auto;
+
+            display: inline-grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+        }
+
+        .part1 {
+            background-color: blue;
+        }
+
+        .part2 {
+            background-color: rgba(0, 0, 0, 0.75);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+        }
+
+        .part {
+            grid-row: 1 / 2;
+            grid-column: 1 / 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="part part1">
+            <video src="./video.mp4" autoplay muted></video>
+        </div>
+        <div class="part part2">
+            <h1>Some Heading</h1>
+        </div>
+    </div>
+</body>
+
+</html>
