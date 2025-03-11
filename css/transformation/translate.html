@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .element {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin: 5rem auto;
+
+            /* transform: translate(); */
+            /* transform: translateX();
+            transform: translateY(); */
+            /* transform: translateX(200px); */
+            /* transform: translateY(-50px); */
+            /* transform: translate(200px,0); */
+
+            /* transform: translateX(200px) translateY(200px); */
+            position: relative;
+        }
+
+        .child-circle-1{
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+            z-index: 3;
+        }
+
+
+        .child-circle-2{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            z-index: 2;
+        }
+
+        .child-circle-3{
+            width: 150px;
+            height: 150px;
+            background-color: blue;
+            z-index: 1;
+        }
+
+        .child-circle {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            border-radius: 100%;
+            transform: translate(-50%, -50%);
+        }
+
+        .child-1,
+        .child-2,
+        .child-3,
+        .child-4 {
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+            position: absolute;
+        }
+
+        .child-1 {
+            left: 0;
+            top: 0;
+            transform: translate(-50%, -50%);
+        }
+
+        .child-2 {
+            right: 0;
+            top: 0;
+            transform: translate(50%, -50%);
+        }
+
+        .child-3 {
+            bottom: 0;
+            left: 0;
+            transform: translate(-50%,50%);
+        }
+
+        .child-4 {
+            bottom: 0;
+            right: 0;
+            transform: translate(50%,50%);
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <!-- translate, rotate , skew , matrix -->
+    <!-- 2-D , 3-D -->
+
+    <div class="element">
+        <div class="child-circle child-circle-1"></div>
+        <div class="child-circle child-circle-2"></div>
+        <div class="child-circle child-circle-3"></div>
+        <div class="child-1"></div>
+        <div class="child-2"></div>
+        <div class="child-3"></div>
+        <div class="child-4"></div>
+    </div>
+
+</body>
+
+</html>
