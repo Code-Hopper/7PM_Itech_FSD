@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        .element {
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+            font-size: 1.5rem;
+            font-family: sans-serif;
+            margin: 0.5rem 0;
+            position: relative;
+        }
+
+        .element1 {
+            animation: moveToRight 5s linear infinite;
+        }
+
+        .element2 {
+            animation: moveToRight 5s ease infinite;
+        }
+
+        .element3 {
+            animation: moveToRight 5s ease-in infinite;
+        }
+
+        .element4 {
+            animation: moveToRight 5s ease-out infinite;
+        }
+
+        .element5 {
+            animation: moveToRight 5s ease-in-out infinite;
+        }
+
+        .element6 {
+            animation: moveToRight 5s steps(10) infinite;
+        }
+
+
+        .element7 {
+            animation: moveToRight 5s cubic-bezier(.87,1.56,.05,-0.62) infinite;
+        }
+
+
+        @keyframes moveToRight {
+            0% {
+                left: 0;
+            }
+
+            50% {
+                left: calc(100% - 100px);
+            }
+
+            100% {
+                left: 0;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="element element1">linear</div>
+    <div class="element element2">ease</div>
+    <div class="element element3">ease-in</div>
+    <div class="element element4">ease-out</div>
+    <div class="element element5">ease-in-out</div>
+    <div class="element element6">steps</div>
+    <div class="element element7">element7</div>
+</body>
+
+</html>

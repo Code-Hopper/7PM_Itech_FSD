@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            height: 100vh;
+        }
+
+        .element {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+            font-family: sans-serif;
+            color: white;
+            padding: 1rem;
+            box-sizing: border-box;
+            /* transform: ; */
+            /* rotateX(deg), rotateY(deg) */
+            /* transform: rotateX(40deg); */
+            /* transform: rotateY(40deg); */
+            /* transform: rotateX(40deg) rotateY(40deg); */
+            animation: rotate360 2s linear 1;
+        }
+
+        @keyframes rotate360 {
+            0%{
+                transform: translateY(0) rotateX(40deg) rotateY(0);
+            }
+            50%{
+                transform: translateY(-500px) rotateX(360deg) rotateY(360deg); 
+            }
+            100%{
+                transform: translateY(0)  rotateX(40deg) rotateY(720deg);
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="element">
+        <h1>element</h1>
+    </div>
+</body>
+
+</html>
