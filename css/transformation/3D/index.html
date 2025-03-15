@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+
+        body{
+            height: 100vh;
+            position: relative;
+        }
+
+        .element{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: absolute;
+            left: 50%;
+            /* top: 50%; */
+            top: 200px;
+            transform: translateX(-50%) translateZ(200px);
+        }
+
+        .element2{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            position: absolute;
+            left: 50%;
+            /* top: 50%; */
+            transform: translateX(-50%)  translateZ(5px);
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="element"></div>
+    <div class="element2"></div>
+</body>
+</html>
