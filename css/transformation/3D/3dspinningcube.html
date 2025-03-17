@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            perspective: 5000px;
+        }
+
+        .cube {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            transform: rotateX(-30deg) rotateY(0);
+            transform-style: preserve-3d;
+            animation: rotate 5s ease infinite;
+        }
+
+        .face {
+            width: 200px;
+            border: 2px solid black;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            position: absolute;
+        }
+
+        .face1 {
+            background-color: rgba(255, 0, 0, 0.5);
+            transform: rotateX(0deg) translateZ(200px);
+            animation: join1 2s ease infinite;
+        }
+
+        .face2 {
+            background-color: rgba(0, 255, 0, 0.5);
+            transform: rotateX(180deg) translateZ(200px);
+            animation: join2 2s ease infinite;
+        }
+
+        .face3 {
+            background-color: rgba(0, 0, 255, 0.5);
+            transform: rotateY(90deg) translateZ(200px);
+            animation: join3 2s ease infinite;
+        }
+
+        .face4 {
+            background-color: rgba(255, 255, 0, 0.5);
+            transform: rotateY(-90deg) translateZ(200px);
+            animation: join4 2s ease infinite;
+        }
+
+        .face5 {
+            background-color: rgba(255, 0, 255, 0.5);
+            transform: rotateX(90deg) translateZ(200px);
+            animation: join5 2s ease infinite;
+            
+        }
+
+        .face6 {
+            background-color: rgba(0, 255, 255, 0.5);
+            transform: rotateX(-90deg) translateZ(200px);
+            animation: join6 2s ease infinite;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotateX(-30deg) rotate(0deg);
+            }
+
+            to {
+                transform: rotateX(-360deg) rotate(360deg);
+            }
+        }
+
+        @keyframes join1 {
+            from {
+                transform: rotateX(0deg) translateZ(200px);
+            }
+
+            to {
+                transform: rotateX(0deg) translateZ(100px);
+            }
+        }
+
+        @keyframes join2 {
+            from {
+                transform: rotateX(180deg) translateZ(200px);
+            }
+
+            to {
+                transform: rotateX(180deg) translateZ(100px);
+            }
+        }
+
+        @keyframes join3 {
+            from {
+                transform: rotateY(90deg) translateZ(200px);
+            }
+
+            to {
+                transform: rotateY(90deg) translateZ(100px);
+            }
+        }
+
+        @keyframes join4 {
+            from {
+                transform: rotateY(-90deg) translateZ(200px);
+            }
+
+            to {
+                transform: rotateY(-90deg) translateZ(100px);
+            }
+        }
+
+        @keyframes join5 {
+            from {
+                transform: rotateX(90deg) translateZ(200px);
+            }
+
+            to {
+                transform: rotateX(90deg) translateZ(100px);
+            }
+        }
+
+        @keyframes join6 {
+            from {
+                transform: rotateX(-90deg) translateZ(200px);
+            }
+            to {
+                transform: rotateX(-90deg) translateZ(100px);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="cube">
+            <div class="face face1">Face 1</div>
+            <div class="face face2">Face 2</div>
+            <div class="face face3">Face 3</div>
+            <div class="face face4">Face 4</div>
+            <div class="face face5">Face 5</div>
+            <div class="face face6">Face 6</div>
+        </div>
+    </div>
+</body>
+
+</html>
