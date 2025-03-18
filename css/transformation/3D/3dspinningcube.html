@@ -26,7 +26,7 @@
             width: 200px;
             height: 200px;
             position: relative;
-            transform: rotateX(-30deg) rotateY(0);
+            transform: rotateX(-30deg) rotateY(0deg);
             transform-style: preserve-3d;
             animation: rotate 5s ease infinite;
         }
@@ -44,109 +44,87 @@
 
         .face1 {
             background-color: rgba(255, 0, 0, 0.5);
-            transform: rotateX(0deg) translateZ(200px);
+            transform: rotateX(0deg) translateZ(100px);
             animation: join1 2s ease infinite;
         }
 
         .face2 {
             background-color: rgba(0, 255, 0, 0.5);
-            transform: rotateX(180deg) translateZ(200px);
+            transform: rotateX(180deg) translateZ(100px);
             animation: join2 2s ease infinite;
         }
 
         .face3 {
             background-color: rgba(0, 0, 255, 0.5);
-            transform: rotateY(90deg) translateZ(200px);
+            transform: rotateY(90deg) translateZ(100px);
             animation: join3 2s ease infinite;
         }
 
         .face4 {
             background-color: rgba(255, 255, 0, 0.5);
-            transform: rotateY(-90deg) translateZ(200px);
+            transform: rotateY(-90deg) translateZ(100px);
             animation: join4 2s ease infinite;
         }
 
         .face5 {
             background-color: rgba(255, 0, 255, 0.5);
-            transform: rotateX(90deg) translateZ(200px);
+            transform: rotateX(90deg) translateZ(100px);
             animation: join5 2s ease infinite;
-            
+
         }
 
         .face6 {
             background-color: rgba(0, 255, 255, 0.5);
-            transform: rotateX(-90deg) translateZ(200px);
+            transform: rotateX(-90deg) translateZ(100px);
             animation: join6 2s ease infinite;
         }
 
-        @keyframes rotate {
+         @keyframes rotate {
             from {
-                transform: rotateX(-30deg) rotate(0deg);
+                transform: rotateX(-30deg) rotateY(0deg);
             }
-
-            to {
-                transform: rotateX(-360deg) rotate(360deg);
+            to{
+                transform: rotateX(360deg) rotateY(360deg);
             }
         }
 
-        @keyframes join1 {
-            from {
-                transform: rotateX(0deg) translateZ(200px);
-            }
+        /* 
 
-            to {
+        @keyframes join1 {
+            50% {
                 transform: rotateX(0deg) translateZ(100px);
             }
         }
 
         @keyframes join2 {
-            from {
-                transform: rotateX(180deg) translateZ(200px);
-            }
-
-            to {
+            50% {
                 transform: rotateX(180deg) translateZ(100px);
             }
         }
 
         @keyframes join3 {
-            from {
-                transform: rotateY(90deg) translateZ(200px);
-            }
-
-            to {
+            50% {
                 transform: rotateY(90deg) translateZ(100px);
             }
         }
 
         @keyframes join4 {
-            from {
-                transform: rotateY(-90deg) translateZ(200px);
-            }
-
-            to {
+            50% {
                 transform: rotateY(-90deg) translateZ(100px);
             }
         }
 
         @keyframes join5 {
-            from {
-                transform: rotateX(90deg) translateZ(200px);
-            }
-
-            to {
+            50% {
                 transform: rotateX(90deg) translateZ(100px);
             }
         }
 
         @keyframes join6 {
-            from {
-                transform: rotateX(-90deg) translateZ(200px);
-            }
-            to {
+            50% {
                 transform: rotateX(-90deg) translateZ(100px);
             }
-        }
+        } */
     </style>
 
 </head>
