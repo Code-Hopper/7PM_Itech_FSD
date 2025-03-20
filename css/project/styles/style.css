@@ -1,0 +1,19 @@
+/* gobal rules start*/
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    /* theme color variable */
+    --primaryColor: rgb(29, 22, 22);
+    --secondaryColor: rgb(142, 22, 22);
+    --thirdColor: rgb(216, 64, 64);
+    --fourthColor: rgb(238, 238, 238);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Space Mono", monospace;
+}
+
+/* gobal rules end*/
