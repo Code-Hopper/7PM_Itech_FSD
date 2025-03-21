@@ -8,7 +8,10 @@
     --secondaryColor: rgb(142, 22, 22);
     --thirdColor: rgb(216, 64, 64);
     --fourthColor: rgb(238, 238, 238);
-}
+
+    /* default margins */
+    --sidePaddingValue: 12rem;
+}   
 
 * {
     margin: 0;
@@ -17,3 +20,30 @@
 }
 
 /* gobal rules end*/
+
+/* navbar start*/
+
+.navbar{
+    display: flex;
+    background-color: var(--primaryColor);
+    color: var(--fourthColor);
+    padding: 1rem var(--sidePaddingValue);
+}
+
+.navbar >.navbar-logo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar >.navbar-logo > .icon{
+    background-color: var(--thirdColor);
+    padding: 0.85rem 1rem;
+    border-radius: 100%;
+}
+
+.navbar >.navbar-menu{
+    flex-grow: 1;
+}
+
+/* navbar end*/
