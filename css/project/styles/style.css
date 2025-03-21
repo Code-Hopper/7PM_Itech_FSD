@@ -27,7 +27,7 @@
     display: flex;
     background-color: var(--primaryColor);
     color: var(--fourthColor);
-    padding: 1rem var(--sidePaddingValue);
+    padding: 0.5rem var(--sidePaddingValue);
 }
 
 .navbar >.navbar-logo{
