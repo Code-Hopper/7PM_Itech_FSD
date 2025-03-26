@@ -138,9 +138,14 @@
 
 /* hero start */
 
-.hero-main-container{
-    background: linear-gradient(0,rgba(0,0,0,.75),rgba(0,0,0,.75)), url("../media//hero-bg.jpg");
-    background-position: center center;
+.hero-main-container {
+    background-image: radial-gradient(rgba(0, 0, 0, 0.05) 6px,
+            rgba(0, 0, 0, 0.06) 6px,
+            white 6px,
+            white 100%);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 10px 10px;
 }
 
 .hero-container {
@@ -148,7 +153,6 @@
     flex-direction: row;
     gap: 1rem;
     padding: 5rem;
-    color: var(--fourthColor);
     overflow: hidden;
 }
 
@@ -224,12 +228,12 @@
     transform: translate(-50%, -50%) scale(1) rotate(360deg);
 }
 
-.hero-cta:hover{
+.hero-cta:hover {
     transform: translateX(5px) translateY(5px);
     box-shadow: 0px 0px 0px 0px #a29bfe;
 }
 
-.hero-image > .hero-main-img{
+.hero-image>.hero-main-img {
     width: 100%;
     position: absolute;
     top: -50%;
