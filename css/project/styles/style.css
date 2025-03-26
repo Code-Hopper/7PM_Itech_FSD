@@ -74,15 +74,6 @@
     gap: 1rem;
     cursor: pointer;
     box-sizing: border-box;
-
-    border: 5px solid rgb(19, 102, 51);
-    border-top: 0;
-    border-left: 0;
-    transition: all 0.5s ease;
-}
-
-.navbar-menu>.direct-chat>button:hover {
-    border: none;
 }
 
 .quick-dropdown {
@@ -120,7 +111,7 @@
     display: block;
 }
 
-.mobile-menu-trigger{
+.mobile-menu-trigger {
     display: none;
 }
 
@@ -129,7 +120,7 @@
 
 @media screen and (max-width: 990px) {
 
-    .mobile-menu-trigger{
+    .mobile-menu-trigger {
         display: initial;
         background-color: transparent;
         color: var(--fourthColor);
@@ -137,10 +128,111 @@
         font-size: 1.5rem;
         margin-left: auto;
     }
-    
+
     .navbar-menu {
         display: none !important;
     }
 }
 
 /* navbar end*/
+
+/* hero start */
+
+.hero-main-container{
+    background: linear-gradient(0,rgba(0,0,0,.75),rgba(0,0,0,.75)), url("../media//hero-bg.jpg");
+    background-position: center center;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 5rem;
+    color: var(--fourthColor);
+    overflow: hidden;
+}
+
+.hero-container>.hero-text {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: start;
+}
+
+.hero-container>.hero-image {
+    flex: 1;
+    /* background-color: yellow; */
+    position: relative;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+}
+
+.hero-title-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hero-title>span {
+    font-weight: bold;
+}
+
+.hero-title-2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.hero-text-extra {
+    opacity: .5;
+}
+
+.hero-cta {
+    padding: 1rem 2rem;
+    border: none;
+    font-weight: bold;
+    background-color: var(--thirdColor);
+    color: var(--fourthColor);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all ease 0.1s;
+    box-shadow: 5px 5px 0px 0px var(--fourthColor);
+}
+
+.hero-cta::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+
+    background-color: black;
+    transition: all 0.5s ease;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: -1;
+
+    transform: translate(-50%, -50%) scale(0) rotate(0);
+}
+
+.hero-cta:hover::before {
+    transform: translate(-50%, -50%) scale(1) rotate(360deg);
+}
+
+.hero-cta:hover{
+    transform: translateX(5px) translateY(5px);
+    box-shadow: 0px 0px 0px 0px #a29bfe;
+}
+
+.hero-image > .hero-main-img{
+    width: 100%;
+    position: absolute;
+    top: -50%;
+}
+
+/* hero end */
