@@ -139,13 +139,27 @@
 /* hero start */
 
 .hero-main-container {
-    background-image: radial-gradient(rgba(0, 0, 0, 0.05) 6px,
-            rgba(0, 0, 0, 0.06) 6px,
-            white 6px,
-            white 100%);
-    background-repeat: repeat;
-    background-position: center;
-    background-size: 10px 10px;
+    /* background: repeating-radial-gradient(circle at 50% 50%, #000000 0px, #ff8c00 10px, #fff 10px, #fff 20px); */
+    /* background: repeating-linear-gradient(45deg, #ff8c00, #ff8c00 10px, #fff 10px, #fff 20px); */
+    /* background: repeating-linear-gradient(90deg, #000 0 25px, #fff 25px 50px),
+        repeating-linear-gradient(180deg, #000 0 25px, #fff 25px 50px); */
+    /* background: repeating-linear-gradient(-45deg, #ff8c00, #ff8c00 10px, #fff 10px, #fff 20px); */
+    /* background: repeating-radial-gradient(circle at 50% 50%, #ff8c00 0px, #ff8c00 10px, #fff 10px, #fff 20px); */
+    /* background: repeating-linear-gradient(45deg, transparent, transparent 10px, black 10px, black 20px); */
+    /* background: repeating-linear-gradient(0deg, black, black 1px, transparent 1px, transparent 20px),
+            repeating-linear-gradient(90deg, black, black 1px, transparent 1px, transparent 20px); */
+    /* background: repeating-linear-gradient(30deg, #ff8c00, #ff8c00 20px, #fff 20px, #fff 40px); */
+    /* background: repeating-linear-gradient(90deg, #b22222, #b22222 50px, #fff 50px, #fff 55px); */
+    /* background-repeat: repeat;
+    background-position: center;  */
+    /* background-size: 10px 10px; */
+    /* background-size: 1500px 10500px; */
+
+   /* background: repeating-radial-gradient(circle at 50% 50%, #000000 0px, #ff8c00 10px, #fff 10px, #fff 20px);
+   background-size: 10px 10px; */
+
+   background: repeating-radial-gradient(circle at 50% 50%, white 3px, red 10px );
+   background-size: 10px 10px;
 }
 
 .hero-container {
