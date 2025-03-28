@@ -38,6 +38,7 @@
     display: flex;
     background-color: var(--primaryColor);
     color: var(--fourthColor);
+    position: relative;
 }
 
 .navbar>.navbar-logo {
@@ -126,40 +127,45 @@
         color: var(--fourthColor);
         border: none;
         font-size: 1.5rem;
-        margin-left: auto;
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 9999;
     }
 
     .navbar-menu {
-        display: none !important;
+        /* display: none !important; */
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--primaryColor);
+        z-index: 999;
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center;
+
+        transform: translateX(-100%);
+        transition: all 0.5s ease;
+
+    }
+    
+    .mobile-menu-trigger:hover + .navbar-menu {
+        transform: translateX(0) !important;
     }
 }
+
+
 
 /* navbar end*/
 
 /* hero start */
 
 .hero-main-container {
-    /* background: repeating-radial-gradient(circle at 50% 50%, #000000 0px, #ff8c00 10px, #fff 10px, #fff 20px); */
-    /* background: repeating-linear-gradient(45deg, #ff8c00, #ff8c00 10px, #fff 10px, #fff 20px); */
-    /* background: repeating-linear-gradient(90deg, #000 0 25px, #fff 25px 50px),
-        repeating-linear-gradient(180deg, #000 0 25px, #fff 25px 50px); */
-    /* background: repeating-linear-gradient(-45deg, #ff8c00, #ff8c00 10px, #fff 10px, #fff 20px); */
-    /* background: repeating-radial-gradient(circle at 50% 50%, #ff8c00 0px, #ff8c00 10px, #fff 10px, #fff 20px); */
-    /* background: repeating-linear-gradient(45deg, transparent, transparent 10px, black 10px, black 20px); */
-    /* background: repeating-linear-gradient(0deg, black, black 1px, transparent 1px, transparent 20px),
-            repeating-linear-gradient(90deg, black, black 1px, transparent 1px, transparent 20px); */
-    /* background: repeating-linear-gradient(30deg, #ff8c00, #ff8c00 20px, #fff 20px, #fff 40px); */
-    /* background: repeating-linear-gradient(90deg, #b22222, #b22222 50px, #fff 50px, #fff 55px); */
-    /* background-repeat: repeat;
-    background-position: center;  */
-    /* background-size: 10px 10px; */
-    /* background-size: 1500px 10500px; */
-
-   /* background: repeating-radial-gradient(circle at 50% 50%, #000000 0px, #ff8c00 10px, #fff 10px, #fff 20px);
-   background-size: 10px 10px; */
-
-   background: repeating-radial-gradient(circle at 50% 50%, white 3px, red 10px );
-   background-size: 10px 10px;
+    /* background: repeating-radial-gradient(circle at 50% 50%, white 1px, red 10px); */
+    /* background-size: 5px 5px; */
 }
 
 .hero-container {
@@ -168,6 +174,18 @@
     gap: 1rem;
     padding: 5rem;
     overflow: hidden;
+}
+
+@media screen and (max-width: 990px) {
+    .hero-container {
+        flex-direction: column;
+        padding: 3rem 1rem;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
 }
 
 .hero-container>.hero-text {
