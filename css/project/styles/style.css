@@ -112,17 +112,22 @@
     display: block;
 }
 
-.mobile-menu-trigger {
-    display: none;
+.hidden {
+    display: none !important;
 }
 
+#mobile-trigger-label {
+    display: none !important;
+}
 
 /* mobile responsive */
 
 @media screen and (max-width: 990px) {
 
-    .mobile-menu-trigger {
-        display: initial;
+
+
+    #mobile-trigger-label {
+        display: inline-block !important;
         background-color: transparent;
         color: var(--fourthColor);
         border: none;
@@ -132,6 +137,13 @@
         top: 50%;
         transform: translateY(-50%);
         z-index: 9999;
+    }
+
+    #mobile-trigger-label::before {
+        content: "\f0c9";
+        font-family: 'Font Awesome 6 Free';
+        font-weight: 900;
+        transition: all 0.5s ease;
     }
 
     .navbar-menu {
@@ -151,10 +163,17 @@
         transition: all 0.5s ease;
 
     }
-    
-    .mobile-menu-trigger:hover + .navbar-menu {
+
+    #mobile-trigger:checked + #mobile-trigger-label::before {
+        content: "\f00d";
+        font-family: 'Font Awesome 6 Free';
+        font-weight: 900;
+    }
+
+    #mobile-trigger:checked~.navbar-menu {
         transform: translateX(0) !important;
     }
+
 }
 
 
