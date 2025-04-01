@@ -164,7 +164,7 @@
 
     }
 
-    #mobile-trigger:checked + #mobile-trigger-label::before {
+    #mobile-trigger:checked+#mobile-trigger-label::before {
         content: "\f00d";
         font-family: 'Font Awesome 6 Free';
         font-weight: 900;
@@ -182,10 +182,10 @@
 
 /* hero start */
 
-.hero-main-container {
-    /* background: repeating-radial-gradient(circle at 50% 50%, white 1px, red 10px); */
-    /* background-size: 5px 5px; */
-}
+/* .hero-main-container { */
+/* background: repeating-radial-gradient(circle at 50% 50%, white 1px, red 10px); */
+/* background-size: 5px 5px; */
+/* } */
 
 .hero-container {
     display: flex;
@@ -291,3 +291,77 @@
 }
 
 /* hero end */
+
+/* footer start */
+
+.sub-footer {
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), var("../media/footer-bg.jpg"); */
+    /* background-color: red;
+    background-image: url("../media/footer-bg.jpg"); */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/footer-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    padding: 10rem 0;
+}
+
+.contact-tile {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 3rem;
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.8px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.contact-tile>button {
+    padding: 1rem;
+    border: none;
+    font-weight: bold;
+    box-shadow: 0 5px 0 black;
+    transition: all 0.25s ease;
+}
+
+.contact-tile>button:hover {
+    box-shadow: 0 0 0 black;
+    transform: translateY(5px);
+}
+
+
+.main-footer{
+    background-color: var(--primaryColor);
+    color: var(--fourthColor);
+}
+
+.footer-content{
+    padding: 4rem var(--sidePaddingValueDesktop);
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr;
+    gap: 5rem;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.links > ul{
+    list-style: none;
+    padding: 0
+}
+
+.links > ul > li:nth-child(1){
+    font-size: 2rem !important;
+    font-weight: bold;
+}
+
+/* footer end */
